@@ -3,7 +3,11 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
- plugins: [react()],
+  plugins: [react()],
+  build: {
+    outDir: '../backend/LogisticsOps.Api/wwwroot',
+    emptyOutDir: true,
+  },
   server: {
     proxy: {
       '/api': 'http://localhost:5024',

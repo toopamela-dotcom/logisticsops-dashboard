@@ -11,6 +11,9 @@ builder.Services.AddOpenApi();
 builder.Services.AddSingleton<IShipmentRepository, InMemoryShipmentRepository>();
 var app = builder.Build();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
