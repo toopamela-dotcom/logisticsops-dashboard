@@ -483,3 +483,7 @@ $RECYCLE.BIN/
 
 # Ignore build output directories
 backend/LogisticsOps.Api/wwwroot/
+
+#Deployment output
+publish/
+publish.zip
